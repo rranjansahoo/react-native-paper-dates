@@ -261,9 +261,9 @@ function Month(props: MonthSingleProps | MonthRangeProps | MonthMultiProps) {
           styles.monthHeader,
           isHorizontal
             ? {
-                marginTop: monthHeaderSingleMarginTop,
-                marginBottom: monthHeaderSingleMarginBottom,
-              }
+              marginTop: monthHeaderSingleMarginTop,
+              marginBottom: monthHeaderSingleMarginBottom,
+            }
             : null,
         ]}
       >
@@ -311,8 +311,8 @@ function Month(props: MonthSingleProps | MonthRangeProps | MonthMultiProps) {
                       ? 'menu-up'
                       : 'chevron-up'
                     : theme.isV3
-                    ? 'menu-down'
-                    : 'chevron-down'
+                      ? 'menu-down'
+                      : 'chevron-down'
                 }
               />
             </View>
@@ -352,9 +352,9 @@ function Month(props: MonthSingleProps | MonthRangeProps | MonthMultiProps) {
   )
 }
 
-export const weekMargin = 6
+export const weekMargin = 2
 export const weekSize = daySize + weekMargin
-export const montHeaderHeight = 56
+export const montHeaderHeight = 20
 export const monthHeaderSingleMarginTop = 4
 export const monthHeaderSingleMarginBottom = 8 + 44 + 12
 export const monthHeaderSingleHeight =

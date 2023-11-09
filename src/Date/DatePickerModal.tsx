@@ -24,23 +24,23 @@ interface DatePickerModalProps {
   disableStatusBarPadding?: boolean
   inputEnabled?: boolean
   presentationStyle?:
-    | 'fullScreen'
-    | 'pageSheet'
-    | 'formSheet'
-    | 'overFullScreen'
+  | 'fullScreen'
+  | 'pageSheet'
+  | 'formSheet'
+  | 'overFullScreen'
 }
 
 export interface DatePickerModalSingleProps
   extends DatePickerModalContentSingleProps,
-    DatePickerModalProps {}
+  DatePickerModalProps { }
 
 export interface DatePickerModalMultiProps
   extends DatePickerModalContentMultiProps,
-    DatePickerModalProps {}
+  DatePickerModalProps { }
 
 export interface DatePickerModalRangeProps
   extends DatePickerModalContentRangeProps,
-    DatePickerModalProps {}
+  DatePickerModalProps { }
 
 export function DatePickerModal(
   props:
@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
   },
   modalContentBig: {
     maxWidth: 600,
-    maxHeight: 800,
+    maxHeight: 600,
     borderRadius: 10,
     width: '100%',
     overflow: 'hidden',

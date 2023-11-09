@@ -92,8 +92,8 @@ export function useRangeChecker(validRange: ValidRangeType | undefined) {
     (day: Date) => {
       return validDisabledDatesRef.current
         ? validDisabledDatesRef.current.some((disabledDate) =>
-            areDatesOnSameDay(disabledDate, day)
-          )
+          areDatesOnSameDay(disabledDate, day)
+        )
         : false
     },
     [validDisabledDatesRef]
@@ -160,7 +160,7 @@ export function isLeapYear({ year }: { year: number }) {
   return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
 }
 
-export const daySize = 46
+export const daySize = 35
 export const estimatedMonthHeight = 360
 export const startAtIndex = 1200
 export const totalMonths = startAtIndex * 2
