@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
   },
   modalContentBig: {
     maxWidth: 600,
-    maxHeight: 600,
+    maxHeight: 430,
     borderRadius: 10,
     width: '100%',
     overflow: 'hidden',
